@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encomendar Bolo</title>
+</head>
+<body>
+    <header>
+        <h1>Encomendar Bolo</h1>
+    <ul>
+        <li> <a href="../index.html">Página Principal</a></li>
+        <li> <a href="../Encomendas/index_Encomendas.html"> Encomendar Bolo</a></li>
+    </ul>
+    </header> 
+    <main>
+        <h2>Encomendar Bolo</h2>
+            <form method="get">
+                Nome: <input type="text" id="Nome" size="35" maxlength="35" placeholder="Informe o nome" autofocus>
+                DDD(<input type="text" id="DDD" size="2" maxlength="2" placeholder="DDD">)
+                Telefone: <input type="text" id="Telefone" size="10" maxlength="10" placeholder="Informe o nome">
+                <br />
+                <br>
+        <table border>
+            <caption>Bolos</caption>
+            <tr>
+                <th><img src="../Imagens/Bolo01.png" alt="Bolo de Chocolate" width="200"></th>
+                <th><img src="../Imagens/Bolo02.png" alt="Bolo de Frutas" width="200"></th>
+                <th><img src="../Imagens/Bolo03.png" alt="Bolo Misto" width="200"></th>
+            </tr>
+            <tr>
+                <th>Chocolate</th>
+                <th>Frutas</th>
+                <th>Misto</th>
+            </tr>
+        </table>
+        <br>
+        Sabor: <select name="periodo">
+            <option value="esc" selected disabled>Escolha... </option>
+            <option value="choc">Chocolate</option>
+            <option value="fru">Frutas</option>
+            <option value="mist">Misto</option>
+           </select> 
+           Tipo: <input type="radio" name="esc" value="simp" />Simples
+           <input type="radio" name="esc" value="dec" />Decorado
+        </option>
+        <br>
+        <br>
+            Tamanho: <input type="number" id="Tamanho" min="1" max="10"> kg <input type="checkbox"> Diet?
+        <br><br>
+        Observações:
+        <br>
+            <textarea rows="3" cols="80" placeholder="Observações sobre o pedido"></textarea>
+       <br><br>
+            <input type="submit" value="Enviar Pedido">
+            <input type="reset" value="Limpar"> 
+    </main>
+        </form>
+</body>
+</html>
